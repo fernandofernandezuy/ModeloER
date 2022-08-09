@@ -53,6 +53,10 @@ body{
 
 /* Services */
 
+.peter {
+    height: 340px;
+}
+
 .subtitulo{
     color: #9f8ad0;
     font-size: 40px;
