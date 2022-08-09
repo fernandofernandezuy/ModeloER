@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Entidad Relación</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header" id="inicio">
+
+
+        <div class="contenedor head">
+            <h1 class="titulo">Modelo Entidad Relación</h1>
+
+            <h2 class="subtitle">¿Qué es el Modelo E-R?</h2>
+
+            <p class="parrafo">
+                El Modelo Entidad Relacion o M.E.R es una herramienta la cual facilita la representacion de entidades en
+                una base de datos.
+                El modelado de datos se puso de moda en la década de 1970 impulsado por la necesidad de modelar
+                adecuadamente las bases de datos o incluso los procesos comerciales del mundo real.
+            </p>
+            <p class="parrafo">
+                Un modelo de entidad relación describe cosas de interés interrelacionadas en un dominio específico de
+                conocimiento. En ingeniería de software, el modelo E-R se utiliza generalmente para incorporar cosas que
+                necesita recordar una empresa para efectuar los procesos empresariales.
+            </p>
+            <p class="parrafo">
+                Solo presenta de forma gráfica un diseño de datos del negocio, sin definir los procesos. Por tanto, es
+                una herramienta gráfica fácil de usar para modelar datos, ampliamente utilizada en el diseño de bases de
+                datos, que ayuda a identificar las entidades que existen en un sistema y las relaciones entre esas
+                entidades. Generalmente, se dibuja con cuadros (entidades), que se encuentran conectados por líneas
+                (relaciones), expresando las dependencias y asociaciones entre esas entidades.
+            </p>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Historia del Modelo E-R</h2>
+            <div class="contenedor-servicio">
+                <img src="img/PeterChen.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+
+                        <p class="pservice"> Peter Chen popularizó el modelo de entidad relación en su famoso artículo
+                            que publicó en
+                            1976 “El modelo de entidad relación hacia una vista unificada de los datos”. Fue propuesto
+                            para crear una convención estándar que pudiera usarse para bases de datos relacionales. Su
+                            objetivo era utilizar el modelo E-R como un enfoque conceptual de modelado. Peter Chen
+                            afirmaba en su artículo: “El modelo de entidad relación adopta una visión más natural del
+                            mundo real, que consiste de entidades y relaciones. Incorpora parte de la importante
+                            información semántica sobre el mundo real”. El artículo de Charles Bachman de 1969 para la
+                            publicación Data Base presentó el concepto de “entidades” de bases de datos y fue uno de los
+                            primeros diagramas de estructura de datos, que más tarde se conocería como diagrama de
+                            Bachman. Esto fue muy influyente en Peter Chen.
+                        </p>
+                    </div>
+                </div>
+
+
+
+        </section>
+
+
+        <section class="contenedor" id="expertos">
+
+            <h2 class="subtitulo">Diagrama de entidad relación</h2>
+
+            <p class="pservice">
+                El diagrama de entidad relación muestra las relaciones del conjunto de
+                entidades almacenadas en una base de datos. Es decir, los diagramas E-R ayudan a
+                explicar la estructura lógica de las bases de datos.
+            </p>
+
+            <p class="pservice">
+                Ejemplo: una canción particular es una entidad, mientras que la colección de todas las
+                canciones en una base de datos es un conjunto de entidades.
+            </p>
+
+            <p class="pservice">
+                A primera vista, un diagrama E-R se ve muy similar a un diagrama de flujo. Sin embargo,
+                el diagrama E-R incluye muchos símbolos especializados, y sus significados hacen que
+                este modelo sea único.
+            </p>
+
+        </section>
+
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Simbología</h2>
+            <div class="contenedor-servicio">
+                <img src="img/simbologia.png" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+
+                        <h2 class="subtitulos">Elementos</h2>
+
+                        <ul>
+                            <li><strong>Entidades:</strong> Una entidad es algo del mundo real, que es fácilmente
+                                reconocible. Es
+                                cualquier cosa
+                                en la empresa que se representará en la base de datos. Puede ser algo físico o
+                                simplemente un
+                                hecho o evento que ocurre en el mundo real.</li>
+                            <li><strong>Atributos:</strong> Un atributo describe la propiedad de una entidad
+                            </li>
+                            <li><strong>Relaciones:</strong> Una relación muestra cómo se relacionan las entidades entre
+                                sí. Se pueden
+                                considerar
+                                como los verbos que unen dos o más sustantivos. Está representada por la forma de
+                                diamante en el
+                                diagrama E-R.</li>
+                            <li><strong>Cardinalidad:</strong> La cardinalidad especifica cuántas instancias de una
+                                entidad se relacionan
+                                con una
+                                instancia de otra entidad. La ordinalidad también está vinculada estrechamente a la
+                                cardinalidad.</li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+        </section>
+
+        <section class="services contenedor" id="servicio">
+            <div class="contenedor-servicio">
+                <img src="img/cardinalidad.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+
+                        <h2 class="subtitulos">Cardinalidad</h2>
+
+                        <ul>
+                            <li><strong>Relación uno a uno:</strong>
+                                Es cuando una sola instancia de una entidad se asocia con una sola instancia de otra
+                                entidad. Por ejemplo, una persona solo tiene un pasaporte y solo se le da un pasaporte a
+                                una persona.</li>
+                            <li><strong>Relación uno a muchos:</strong> Es cuando una instancia de una entidad se asocia
+                                con más de una instancia de otra entidad. Por ejemplo, un cliente puede hacer muchos
+                                pedidos, pero muchos clientes no pueden hacer un pedido.
+                            </li>
+                            <li><strong>Relación muchos a uno:</strong> Es cuando más de una instancia de una entidad
+                                está asociada con una sola instancia de otra entidad. Por ejemplo, muchos estudiantes
+                                pueden estudiar en una sola universidad, pero un estudiante no puede estudiar en muchas
+                                universidades al mismo tiempo.</li>
+                            <li><strong>Relación muchos a muchos:</strong> Es cuando más de una instancia de una entidad
+                                se asocia con más de una instancia de otra entidad. Por ejemplo, un estudiante puede
+                                asignarse a muchos proyectos y un proyecto se puede asignar a muchos estudiantes.</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">¿Cómo hacer un modelo de entidad relación?</h2>
+            <div class="contenedor-servicio">
+                <img src="img/diagrama1.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+
+                        <h2 class="subtitulos">Paso 1: Identificar las entidades</h2>
+
+                        <p>El primer paso para hacer un diagrama de entidad relación es identificar todas las entidades
+                            que se
+                            usarán. Una entidad no es más que un rectángulo con una descripción de algo sobre lo que el
+                            sistema
+                            almacena información.</p>
+                    </div>
+
+                </div>
+
+                <div class="contenedor-servicio">
+                    <img src="img/diagrama2.jpg" alt="">
+                    <div class="checklist-servicio">
+                        <div class="service">
+
+                            <h2 class="subtitulos">Paso 2: Identificar las relaciones</h2>
+
+                            <p>Se miran dos entidades, en caso de estar relacionadas entre sí se dibuja una línea
+                                continua que conecte las dos entidades. Para describir la relación de las entidades se
+                                dibuja un diamante entre las dos entidades, en la línea que se acaba de agregar. En el
+                                diamante se debe escribir una breve descripción de cómo están relacionadas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="contenedor-servicio">
+                        <img src="img/diagrama3.jpg" alt="">
+                        <div class="checklist-servicio">
+                            <div class="service">
+
+                                <h2 class="subtitulos">Paso 3: Identificar las cardinalidades</h2>
+
+                                <p>Para efectos del ejemplo en cuestión, se sabe que un alumno puede estar asignado en
+                                    múltiples cursos y un profesor solo puede impartir un curso. Por tanto, el diagrama
+                                    queda como:.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="contenedor-servicio">
+                            <img src="img/diagrama4.jpg" alt="">
+                            <div class="checklist-servicio">
+                                <div class="service">
+
+                                    <h2 class="subtitulos">Paso 4: Identificar los atributos</h2>
+
+                                    <p>Se deben estudiar los archivos, formularios, informes y datos que la
+                                        organización mantiene actualmente para identificar los atributos. Una vez
+                                        que se tenga una lista de atributos, deben asignarse a las entidades
+                                        identificadas. Hay que asegurarse que un atributo se empareje con
+                                        exactamente una entidad. Si se cree que un atributo debe pertenecer a más de
+                                        una entidad, debe usarse un modificador para hacerlo único.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contenedor-servicio">
+                                <img src="img/diagrama5.jpg" alt="">
+                                <div class="checklist-servicio">
+                                    <div class="service">
+
+                                        <h2 class="subtitulos">Paso 5: Completar el diagrama</h2>
+
+                                        <p>Se debe continuar conectando las entidades con líneas y agregando los
+                                            diamantes para describir cada relación, hasta que se hayan descrito todas
+                                            las relaciones. Es posible que alguna de las entidades no tenga relación con
+                                            ninguna otra entidad. Por otro lado, otras entidades pueden tener múltiples
+                                            relaciones. Una representación más moderna del diagrama E-R es la siguiente:
+                                        </p>
+                                    </div>
+
+                                </div>
+        </section>
+        
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Ejemplos</h2>
+            <div class="contenedor-servicio">
+                <img src="img/BasedeDatos.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+
+                        <h2 class="subtitulos">Diagrama de base de datos</h2>
+                        <p>
+                            Hay dos razones para crear un diagrama de entidad relación para una base de datos: Se está
+                            diseñando un nuevo modelo o se necesita documentar la estructura existente.
+                        </p>
+                    
+                        <p>
+                            Si se tiene una base de datos existente que se necesita documentar, se crea un diagrama de
+                            entidad relación utilizando los datos directamente de la base de datos</p>
+                        
+                    </div>
+                </div>
+
+                <div class="contenedor-servicio">
+                    
+                    <div class="checklist-servicio">
+                        <div class="service">
+    
+                            <h2 class="subtitulos">Modelo de venta por Internet</h2>
+                            <p>
+                                Aquí hay un ejemplo del modelo de entidad relación para la venta por Internet, utilizando un diagrama entidad relación:
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <img src="img/ModeloVentaInternet.jpg" alt="">
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Jóvenes a Programar</h2>
+                <p>Grupo 238 Desarrollo Web</p>
+                <p>Fernando Fernández, Gastón Ferron, Juan Gabriel Diaz</p>
+            </div>
+
+            <div class="line"></div>
+    </footer>
+
+</body>
+
+</html>
